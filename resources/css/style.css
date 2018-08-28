@@ -4,8 +4,19 @@ html {
   font-size: 16px;
 }
 
-.main-content {
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 
+h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#main-content {
+  max-width: 100%;
+  line-height: 1.2;
 }
 
 @media only screen and (min-width: 480px) {
@@ -44,6 +55,7 @@ header .logo img {
 
 header .logo h3 {
   font-size: 1.25rem;
+  font-weight: bold;
 }
 
 header .logo span {
@@ -64,6 +76,16 @@ header nav.desktop a {
   color: black;
 }
 
+@media only screen and (min-width: 480px) {
+  header nav.desktop a:hover {
+    color: green;
+  }
+
+  header nav.desktop a:active {
+    color: red;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   header .logo {
     display: none;
@@ -77,5 +99,54 @@ header nav.desktop a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+/* Banner */
+
+#banner {
+  display: flex;
+  align-items: center;
+  background-color: grey;
+}
+
+.banner-image {
+  overflow: hidden;
+  max-width: 60%;
+  padding: 2rem 2rem 2rem 1.5rem;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.banner-content {
+  max-width: 20%;
+}
+
+.banner-content h1, .banner-content h2 {
+  padding-bottom: 2rem;
+}
+
+.banner-content .button {
+  color: white;
+  background-color: black;
+  padding: .5rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.banner-content a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 480px) {
+  .banner-content .button:hover {
+    background-color: green;
+  }
+
+  .banner-content .button:active {
+    background-color: red;
   }
 }
