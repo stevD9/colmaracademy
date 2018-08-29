@@ -10,8 +10,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.50rem;
   font-weight: bold;
+}
+
+p, a {
+  font-size: 1.25rem;
 }
 
 #main-content {
@@ -66,7 +70,7 @@ header .logo h3 {
 }
 
 header .logo span {
-  color: grey;
+  color: lightgrey;
 }
 
 header nav.desktop ul {
@@ -114,7 +118,7 @@ header nav.desktop a {
 #banner {
   display: flex;
   align-items: center;
-  background-color: grey;
+  background-color: lightgrey;
 }
 
 .banner-image {
@@ -157,4 +161,79 @@ header nav.desktop a {
   .banner-content .button:active {
     background-color: red;
   }
+}
+
+/* Info */
+
+#info {
+  display: flex;
+}
+
+.quote {
+  max-width: 60%;
+  padding: 2rem 1.5rem;
+  overflow: hidden;
+  border-right: 1px solid lightgrey;
+}
+
+.quote img {
+  max-width: 100%;
+  height: auto;
+}
+
+.quote h1 {
+  padding: 2rem 0 1.5rem 0;
+}
+
+.quote .reference {
+  padding-top: 2rem;
+}
+
+.info-content {
+  max-width: 40%;
+}
+
+.date, .campus, .guest {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.date {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid lightgrey;
+}
+
+.campus, .guest {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.guest {
+  background-color: lightgrey;
+}
+
+.date-image, .campus-image, .guest-image {
+  max-width: 35%;
+  overflow: hidden;
+}
+
+.info-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.date-content, .campus-content, .guest-content {
+  padding-left: 1rem;
+  max-width: 50%;
+}
+
+.info-content p {
+  padding: .5rem 0;
+}
+
+.info-content a {
+  text-decoration: none;
+  color: blue;
 }
