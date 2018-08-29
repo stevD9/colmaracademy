@@ -17,6 +17,8 @@ h2 {
 #main-content {
   max-width: 100%;
   line-height: 1.2;
+  position: relative;
+  top: 4rem;
 }
 
 @media only screen and (min-width: 480px) {
@@ -40,7 +42,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 0 1.5rem;
+  position: fixed;
+  z-index: 100;
+  width: auto;
+  right: 0;
+  left: 0;
 }
 
 header .logo {
@@ -135,6 +142,7 @@ header nav.desktop a {
   padding: .5rem 0;
   width: 100%;
   text-align: center;
+  border-radius: 10px;
 }
 
 .banner-content a {
