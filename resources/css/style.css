@@ -14,6 +14,11 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 p, a {
   font-size: 1.25rem;
 }
@@ -236,4 +241,65 @@ header nav.desktop a {
 .info-content a {
   text-decoration: none;
   color: blue;
+}
+
+@media only screen and (min-width: 480px) {
+  .info-content a:hover {
+    color: green;
+  }
+
+  .info-content a:active {
+    color: red;
+  }
+}
+
+/* Courses */
+
+#courses {
+  padding: 2rem 3.5rem;
+  background-color: lightgrey;
+}
+
+#courses h1 {
+  text-align: center;
+}
+
+#courses .desktop .row {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+#courses .desktop .course {
+  margin: 0 1rem;
+  background-color: white;
+  max-width: 31%;
+}
+
+#courses .desktop .course-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+#courses .desktop .course-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+#courses .desktop .course-info {
+  padding-left: 1rem;
+}
+
+#courses .desktop h2 {
+  padding: 1rem 0;
+}
+
+#courses .row.top .course-content {
+  padding-top: .5rem;
+  padding-bottom: 1.5rem;
+}
+
+#courses .row.bottom .course-content {
+  padding-top: .5rem;
+  padding-bottom: 3rem;
 }
