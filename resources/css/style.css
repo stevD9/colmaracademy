@@ -303,3 +303,98 @@ header nav.desktop a {
   padding-top: .5rem;
   padding-bottom: 3rem;
 }
+
+/* Thesis */
+
+#thesis {
+  padding: 2rem 0;
+}
+
+.thesis-container {
+  display: flex;
+}
+
+#thesis h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.thesis-1 {
+  max-width: 60%;
+  overflow: hidden;
+  padding: 0 1.5rem;
+}
+
+.thesis-1 video {
+  max-width: 100%;
+  height: auto;
+}
+
+.thesis-1 h2 {
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
+}
+
+.thesis-2 {
+  max-width: 40%;
+}
+
+.thesis-info {
+  padding: 1rem 0 1rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.thesis-info.fisma {
+  background-color: lightgrey;
+}
+
+.thesis-image {
+  max-width: 35%;
+  overflow: hidden;
+}
+
+.thesis-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.thesis-content {
+  padding-left: 1rem;
+}
+
+.thesis-content p {
+  padding-top: .5rem;
+}
+
+/* Footer */
+
+footer {
+  font-size: .75rem;
+  display: flex;
+  padding: 1rem 1rem 2rem 1.5rem;
+  border-top: 1px solid black;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+footer .terms span {
+  padding-left: 1rem;
+}
+
+footer .terms a {
+  text-decoration: none;
+  color: blue;
+}
+
+@media only screen and (min-width: 480px) {
+  footer .terms a:hover {
+    color: green;
+  }
+
+  footer .terms a:active {
+    color: red;
+  }
+}
