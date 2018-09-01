@@ -154,6 +154,10 @@ header nav.desktop a {
   border-radius: 10px;
 }
 
+.banner-content .button:active {
+  background-color: red;
+}
+
 .banner-content a {
   text-decoration: none;
 }
@@ -162,15 +166,31 @@ header nav.desktop a {
   .banner-content .button:hover {
     background-color: green;
   }
+}
 
-  .banner-content .button:active {
-    background-color: red;
+@media only screen and (max-width: 480px) {
+  #banner {
+    flex-direction: column;
+  }
+
+  .banner-image {
+    max-width: 100%;
+    padding: 0 0 2rem 0;
+  }
+
+  .banner-content {
+    max-width: 100%;
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .banner-content h2 {
+    padding-bottom: 1.5rem;
   }
 }
 
 /* Info */
 
-#info {
+#information {
   display: flex;
 }
 
@@ -198,28 +218,28 @@ header nav.desktop a {
   max-width: 40%;
 }
 
-.date, .campus, .guest {
+.info {
   display: flex;
   align-items: center;
   padding-left: 1rem;
 }
 
-.date {
+.info.a {
   padding-top: 2rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid lightgrey;
 }
 
-.campus, .guest {
+.info.b, .info.c {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.guest {
+.info.c {
   background-color: lightgrey;
 }
 
-.date-image, .campus-image, .guest-image {
+.info-image {
   max-width: 35%;
   overflow: hidden;
 }
@@ -229,7 +249,7 @@ header nav.desktop a {
   height: auto;
 }
 
-.date-content, .campus-content, .guest-content {
+.info-text {
   padding-left: 1rem;
   max-width: 50%;
 }
@@ -243,13 +263,58 @@ header nav.desktop a {
   color: blue;
 }
 
+.info-content a:active {
+  color: red;
+}
+
 @media only screen and (min-width: 480px) {
   .info-content a:hover {
     color: green;
   }
+}
 
-  .info-content a:active {
-    color: red;
+@media only screen and (max-width: 480px) {
+  #information {
+    display: block;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .info-content {
+    max-width: 100%;
+  }
+
+  .info {
+    display: block;
+    padding-left: 0;
+  }
+
+  .info.a, .info.b {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+
+  .info.c {
+    padding: 0;
+    background-color: white;
+  }
+
+  .info-image {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .info-content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .info-text {
+    max-width: 100%;
+  }
+
+  .info-content h2 {
+    padding-top: 2rem;
   }
 }
 
@@ -302,6 +367,27 @@ header nav.desktop a {
 #courses .row.bottom .course-content {
   padding-top: .5rem;
   padding-bottom: 3rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #courses {
+    padding: 2rem 1rem 1.5rem 1rem;
+    background-color: white;
+  }
+
+  #courses h1 {
+    padding-bottom: 1rem;
+  }
+
+  #courses .mobile .course {
+    background-color: lightgrey;
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+
+  #courses .mobile h2 {
+    padding: 1.5rem 0 1.5rem 1rem;
+  }
 }
 
 /* Thesis */
@@ -367,13 +453,35 @@ header nav.desktop a {
   padding-top: .5rem;
 }
 
+@media only screen and (max-width: 480px) {
+  #thesis {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  #thesis h1 {
+    padding-bottom: 1rem;
+  }
+
+  .thesis-container {
+    display: block;
+  }
+
+  .thesis-1 {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
 /* Footer */
 
 footer {
-  font-size: .75rem;
   display: flex;
   padding: 1rem 1rem 2rem 1.5rem;
   border-top: 1px solid black;
+}
+
+footer p, footer a {
+  font-size: 1rem;
 }
 
 footer .copyright {
@@ -389,12 +497,17 @@ footer .terms a {
   color: blue;
 }
 
-@media only screen and (min-width: 480px) {
-  footer .terms a:hover {
+footer .terms a:hover {
     color: green;
-  }
+}
 
-  footer .terms a:active {
-    color: red;
+footer .terms a:active {
+  color: red;
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    display: block;
+    padding: 1rem 0 1rem .75rem;
   }
 }
