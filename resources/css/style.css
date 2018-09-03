@@ -30,13 +30,13 @@ p, a {
   top: 4rem;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 768px) {
   .mobile {
     display: none;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .desktop {
     display: none;
   }
@@ -92,17 +92,17 @@ header nav.desktop a {
   color: black;
 }
 
-@media only screen and (min-width: 480px) {
+header nav.desktop a:active {
+  color: red;
+}
+
+@media only screen and (min-width: 1190px) {
   header nav.desktop a:hover {
     color: green;
   }
-
-  header nav.desktop a:active {
-    color: red;
-  }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   header .logo {
     display: none;
   }
@@ -162,15 +162,26 @@ header nav.desktop a {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 1190px) {
   .banner-content .button:hover {
     background-color: green;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1190px) {
+  #banner {
+    padding-right: 1.5rem;
+  }
+
+  .banner-content {
+    max-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   #banner {
     flex-direction: column;
+    padding-right: 0;
   }
 
   .banner-image {
@@ -185,6 +196,16 @@ header nav.desktop a {
 
   .banner-content h2 {
     padding-bottom: 1.5rem;
+  }
+
+  .banner-content h1 {
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .banner-content h1 {
+    padding-bottom: 2rem;
   }
 }
 
@@ -267,20 +288,77 @@ header nav.desktop a {
   color: red;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 1190px) {
   .info-content a:hover {
     color: green;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1190px) and (min-width: 768px) {
   #information {
     display: block;
+    padding: 2rem 0;
+  }
+
+  .quote {
+    max-width: 100%;
+    padding: 0;
+    border: none;
+    margin: 0 4.5rem;
+  }
+
+  .info-content {
+    max-width: 100%;
+    padding: 2rem 1.5rem 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info {
+    display: block;
+    padding-left: 0;
+    max-width: 31%;
+  }
+
+  .info.a, .info.b, .info.c {
+    padding: 0;
+    border: none;
+  }
+
+  .info-image {
+    max-width: 100%;
+  }
+
+  .info-content img.desktop {
+    display: none;
+  }
+
+  .info-content img.mobile {
+    display: block;
+  }
+
+  .info-text {
+    max-width: 100%;
+  }
+
+  .info-text h2 {
+    padding-top: 1rem;
+  }
+
+  .info.a p, .info.b p {
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #information {
+    justify-content: center;
     padding: 1rem 1rem 2rem 1rem;
   }
 
   .info-content {
     max-width: 100%;
+    margin: 0 auto;
   }
 
   .info {
@@ -338,7 +416,7 @@ header nav.desktop a {
 #courses .desktop .course {
   margin: 0 1rem;
   background-color: white;
-  max-width: 31%;
+  width: 31%;
 }
 
 #courses .desktop .course-image {
@@ -369,7 +447,23 @@ header nav.desktop a {
   padding-bottom: 3rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 905px) {
+  #courses {
+    padding: 2rem .5rem;
+  }
+
+  #courses .desktop .tablet {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  #courses .row.bottom h2 {
+    padding-bottom: 2.75rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   #courses {
     padding: 2rem 1rem 1.5rem 1rem;
     background-color: white;
@@ -453,7 +547,23 @@ header nav.desktop a {
   padding-top: .5rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 905px) {
+  .thesis-container {
+    display: block;
+  }
+
+  .thesis-1 {
+    padding-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .thesis-2 {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   #thesis {
     padding: 2rem 0 1.5rem 0;
   }
@@ -505,7 +615,7 @@ footer .terms a:active {
   color: red;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   footer {
     display: block;
     padding: 1rem 0 1rem .75rem;
